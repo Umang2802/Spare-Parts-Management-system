@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="Login.css">
+<title>Automobile Spare Parts</title>
+
+</head>
+<body>
+    <div id="id01">
+        <div class="imgcontainer">
+          <img src="login2.jpg" alt="Avatar" class="avatar">
+        </div>
+      <form name="login">
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input id="num" type="text"  placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input id="numb" type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="button" onclick="check(this.form)">Login</button>
+         
+        </div>
+    
+       
+      </form>
+    </div>
+  
+<script language="javascript">
+  function check(form) {
+       if(form.uname.value=="umangmetri@gmail.com" && form.psw.value=="12345678")
+       {
+         window.location.replace("home.html")
+       }
+       else if (form.uname.value=="krutika0832@gmail.com" && form.psw.value=="1234567890") {
+         window.location.replace("home.html")
+       }
+       else {
+         alert("Error Password or Username")
+       }
+  }
+
+  </script>
+
+</body>
+</html> 

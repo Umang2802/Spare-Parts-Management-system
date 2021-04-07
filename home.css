@@ -1,0 +1,52 @@
+body {
+   background:white;
+   background-image:url(inven1.png); 
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: repeat;
+   background-size:cover;
+   font-family: 'Open Sans';
+   
+  }
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 4.5px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+  color: rgb(255, 255, 255);
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+h1 {
+  color:#08090c;
+   padding:15px;
+   text-align:center;
+  
+}

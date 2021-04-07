@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Customer Information</title>
+<style> 
+input[type=text],input[type=number],input[type=email]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  opacity: 0.8;
+}
+
+h1 {
+  text-align:center;
+  padding: 15px;
+  font-size: 40px;
+}
+
+body {
+font-family:'Calibri';
+background:white;
+color:rgb(0, 0, 0);
+background-image:url(inven1.png); 
+background-attachment: fixed;
+background-position: center;
+background-repeat: repeat;
+background-size:cover;
+}
+
+label {
+	font-size: 25px;
+}
+
+button {
+float: right;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+}
+
+button:hover {
+opacity: 0.8;
+}
+
+</style>
+</head>
+<body>
+
+<h1><b>Customer Information</b></h1>
+<form action="insert.php" method="POST">
+  <label for="cname">Customer Name</label>
+  <input type="text" id="cname" name="cname"  required>
+  <label for="cadd">Customer Address</label>
+  <input type="text" id="cadd" name="cadd" required>
+  <label for="pnum">Phone Number</label></br>
+  <input type="number" id="pnum" name="pnum" required></br></br>
+  <label for="apnum">Alternate Phone Number</label></br>
+  <input type="number" id="apnum" name="apnum" required></br></br>
+  <label for="cmail">Customer Email</label>
+  <input type="email" id="cmail" name="cmail"  required>
+  <button type="submit" name="proceed">Proceed</button>
+</form>
+
+
+</body>
+</html>

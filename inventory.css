@@ -1,0 +1,51 @@
+body {
+font-family:'Calibri';
+background:white;
+color:rgb(0, 0, 0);
+background-image:url(inven1.png); 
+background-attachment: fixed;
+background-position: center;
+background-repeat: repeat;
+background-size:cover;
+}
+
+h2 {
+  text-align:center;
+  padding: 15px;
+}
+
+table {
+border-collapse: collapse;
+color:rgb(0, 0, 0);
+font-size: 18px;
+text-align: center;
+}
+
+th, td {
+text-align: center;
+padding: 8px;
+
+}
+ 
+th {
+  font-size: 20px;
+}
+
+tr:hover {
+  opacity: 0.6;
+}
+
+button {
+float: right;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+}
+
+button:hover {
+opacity: 0.8;
+}
+
