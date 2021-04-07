@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="Login.css">
+<title>Automobile Spare Parts</title>
 
-	<head>
-		<meta name="viewport" content="width=device-width,initial-scale=1"/>
-		<link rel="stylesheet" href="home.css">
-		<link rel="stylesheet" href="bt.css">
-		<title>Home</title>
-	</head>
-
+</head>
 <body>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <div class="navbar">
-    <a class="active" href="home.html"><i class="fa fa-fw fa-home"></i> Home</a>
-	<a href="inventory.php"><i class="fa fa-fw fa-wrench"></i> Inventory </a>
-	<a href="login.html" class="btn btn-info btn-lg">
-			<span class="glyphicon glyphicon-log-out"></span> Log out </a>
-  </div>
+    <div id="id01">
+        <div class="imgcontainer">
+          <img src="login2.jpg" alt="Avatar" class="avatar">
+        </div>
+      <form name="login">
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input id="num" type="text"  placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input id="numb" type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="button" onclick="check(this.form)">Login</button>
+         
+        </div>
+    
+       
+      </form>
+    </div>
+  
+<script language="javascript">
+  function check(form) {
+       if(form.uname.value=="umangmetri@gmail.com" && form.psw.value=="12345678")
+       {
+         window.location.replace("home.html")
+       }
+       else if (form.uname.value=="krutika0832@gmail.com" && form.psw.value=="1234567890") {
+         window.location.replace("home.html")
+       }
+       else {
+         alert("Error Password or Username")
+       }
+  }
 
-  <h1> Engico's Automobile Spare Parts </h1>
+  </script>
 
-	</body>
-</html>
+</body>
+</html> 
